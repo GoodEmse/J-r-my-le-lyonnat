@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jérémy Guillou - Étudiant Vétérinaire & Amateur de Jeux de Mots</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+        
+        header {
+            background-color: #5b9bd5;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .paw-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            z-index: 1;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(255,255,255,0.5) 40px);
+        }
+        
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+            background-color: #ddd;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        h1, h2, h3 {
+            color: #4472c4;
+        }
+        
+        section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px dashed #ccc;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .section-title i {
+            margin-right: 0.5rem;
+            color: #70ad47;
+        }
+        
+        .joke-box {
+            background-color: #e6f2ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 5px solid #5b9bd5;
+            position: relative;
+        }
+        
+        .joke-box::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            color: #5b9bd5;
+            opacity: 0.3;
+        }
+        
+        .joke-box p {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 0 3px;
+            font-weight: bold;
+        }
+        
+        .bischwiller-info {
+            background-color: #e2f0d9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+        
+        .vet-info {
+            background-color: #deebf7;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #5b9bd5;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+        
+        .pun-alert {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        .fun-fact {
+            font-style: italic;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .animal-joke {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .animal-emoji {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="paw-background"></div>
+        <img src="/api/placeholder/180/180" alt="Jérémy Guillou" class="profile-pic">
+        <h1>Jérémy Guillou</h1>
+        <p><em>Étudiant vétérinaire à Lyon & Maître des jeux de mots à Bischwiller</em></p>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">Qui suis-<span class="pun-alert">JE-RÉMY</span> ?</h2>
+            <p>Salut ! Je suis Jérémy Guillou, mais vous pouvez m'appeler <span class="highlight">Jé-rigole-ou</span> car j'adore les jeux de mots (même les plus poilus) !</p>
+            
+            <div class="joke-box">
+                <p>Pourquoi je suis devenu vétérinaire ? Parce qu'avec mon nom <span class="highlight">Guillou</span>, j'étais destiné à m'occuper des <span class="highlight">gui-loupettes</span> et autres animaux !</p>
+            </div>
+            
+            <p>Originaire de la magnifique ville de <span class="highlight">Bischwiller</span> en Alsace (oui, le nom fait déjà sourire), j'étudie actuellement la médecine vétérinaire à Lyon où j'apprends à soigner les animaux tout en perfectionnant mon arsenal de calembours.</p>
+            
+            <div class="joke-box">
+                <p>Les gens me demandent souvent si mon prénom est une blague... je leur réponds : "<span class="pun-alert">Jé-rémi</span> pas de blague sur mon prénom, mais <span class="pun-alert">Jé-rémy</span> toutes les bonnes occasions de faire des jeux de mots !"</p>
+            </div>
+        </section>
+        
+        <section id="etudes">
+            <h2 class="section-title">Mes études vétéri-<span class="pun-alert">drôles</span></h2>
+            <p>Étudier à l'École Nationale Vétérinaire de Lyon, c'est du sérieux... mais pas trop quand même !</p>
+            
+            <div class="animal-joke">
+                <span class="animal-emoji">🐶</span>
+                <p>Les chiens me disent toujours : "Avec toi <span class="highlight">Jé-remedy</span> à tous nos problèmes !"</p>
+            </div>
+            
+            <div class="animal-joke">
+                <span class="animal-emoji">🐱</span>
+                <p>Les chats, eux, pensent que je suis <span class="highlight">Jé-ronronne-my</span> quand je les ausculte.</p>
+            </div>
+            
+            <div class="animal-joke">
+                <span class="animal-emoji">🐦</span>
+                <p>Les oiseaux me voient comme <span class="highlight">Jé-plume-y</span> leurs soucis.</p>
+            </div>
+            
+            <div class="vet-info">
+                <h3>Ce que j'étudie vraiment :</h3>
+                <ul>
+                    <li>Anatomie animale (ou comment distinguer une patte avant d'une patte arrière... parfois c'est pas si évident !)</li>
+                    <li>Pathologie (<span class="highlight">Gui-loup-athologie</span> pour les intimes)</li>
+                    <li>Chirurgie (où il faut avoir les <span class="highlight">Jé-mains</span> bien stables)</li>
+                    <li>Parasitologie (l'étude des créatures qui vous collent aux <span class="highlight">Gui-loups</span>)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="bischwiller">
+            <h2 class="section-title">Ma vie à <span class="pun-alert">Bisch-will-rire</span></h2>
+            <p>Né et grandi à Bischwiller, une ville alsacienne où l'accent est aussi prononcé que mon amour pour les jeux de mots !</p>
+            
+            <div class="joke-box">
+                <p>Quand les gens me demandent d'où je viens, je réponds : "De <span class="highlight">Bisch-will-rire</span>, bien sûr ! Là où même les cigognes font des blagues en livrant les bébés !"</p>
+            </div>
+            
+            <div class="bischwiller-info">
+                <h3>Quelques faits sur Bischwiller :</h3>
+                <p>Située en Alsace, Bischwiller est connue pour :</p>
+                <ul>
+                    <li>Son patrimoine textile (comme les vêtements que je porte pour cacher mes <span class="highlight">gui-loups</span>)</li>
+                    <li>Sa culture alsacienne (aussi riche que mon répertoire de jeux de mots)</li>
+                    <li>Sa proximité avec Strasbourg (assez proche pour sentir l'odeur de la choucroute, assez loin pour ne pas être confondu avec un touriste)</li>
+                </ul>
+                <p class="fun-fact">Si vous passez par là, cherchez le gars qui rigole tout seul à ses propres blagues... c'est probablement moi ou mon écho !</p>
+            </div>
+        </section>
+        
+        <section id="blagues">
+            <h2 class="section-title">Mon bestiaire de blagues</h2>
+            
+            <div class="joke-box">
+                <p>Comment appelle-t-on un vétérinaire qui s'appelle Jérémy Guillou ?<br>
+                Un <span class="highlight">Jé-remedy-Gui-loup</span>, évidemment !</p>
+            </div>
+            
+            <div class="joke-box">
+                <p>Pourquoi est-ce que je ne perds jamais aux jeux de société ?<br>
+                Parce que <span class="highlight">Jé-rémy</span> toujours les règles dans l'ordre !</p>
+            </div>
+            
+            <div class="joke-box">
+                <p>Mon professeur m'a demandé pourquoi j'avais écrit "humour" sur mon devoir d'anatomie.<br>
+                J'ai répondu : "Vous avez demandé d'étiqueter l'<span class="highlight">Gui-l'humour</span> !"</p>
+            </div>
+            
+            <div class="joke-box">
+                <p>Quand je soigne un chat à l'école vétérinaire, mes camarades disent :<br>
+                "Attention, voilà <span class="highlight">Jé-ronronne-my</span> qui arrive !"</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="section-title">Me contacter (si vous osez...)</h2>
+            <p>Vous avez une urgence vétérinaire ? Un besoin urgent de jeux de mots ? Ou vous voulez simplement me dire que mes blagues sont terribles ? N'hésitez pas à me contacter !</p>
+            
+            <div class="joke-box">
+                <p>Email : <span class="highlight">je.remy@gui.loup</span> (attention, je réponds toujours avec au moins un jeu de mots)</p>
+                <p>Téléphone : Composez le numéro de la faculté vétérinaire et demandez "le gars qui fait des blagues sur les <span class="highlight">gui-loups</span>"</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 - Site officiel de Jérémy "<span class="pun-alert">Jé-ris-my</span>" Guillou</p>
+        <p class="fun-fact">Ce site contient 100% de jeux de mots recyclés et approuvés par la SPA (Société Protectrice des Animaux... et des Âneries)</p>
+        
+        <div class="social-links">
+            <a href="#">Insta-<span class="pun-alert">gram-my</span></a>
+            <a href="#">Face-<span class="pun-alert">bouc</span></a>
+            <a href="#">Twi-<span class="pun-alert">ter-rier</span></a>
+        </div>
+    </footer>
+</body>
+</html>
